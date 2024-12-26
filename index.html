@@ -5,173 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mens Fashion store</title>
-    <link rel="stylesheet" href="styleSheet.css">
+    <title>Mens Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="[blazerId].exercise3.html">
-    <logo class="logo">
-        <center>
-            <img src="images\logo.png" alt="Check URL" width="100px" height="100px">
-            <big>
-                Mens Fashion Store
-            </big>
-        </center>
-    </logo>
+<body>
+    <!-- Logo Section -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Mens Fashion Store Logo" class="logo">
+            <h1>Mens Fashion Store</h1>
+        </div>
+    </header>
 
+    <!-- Navigation Bar -->
     <nav class="menu-bar">
-        <hr>
         <ul>
-            <li class="active">
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="itemCatalog.html">
-                    Item Catalog
-                </a>
-            </li>
-            <li>
-                <a href="viewCart.html">
-                    View Cart
-                </a>
-            </li>
-            <li>
-                <a href="login.html">
-                    Login
-                </a>
-            </li>
-            <li>
-                <a href="signup.html">
-                    Sign Up
-                </a>
-            </li>
-            <li>
-                <a href="logout.html">
-                    Logout
-                </a>
-            </li>
-            <li>
-                <a href="aboutUs.html">
-                    About Us
-                </a>
-            </li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="itemCatalog.html">Item Catalog</a></li>
+            <li><a href="viewCart.html">View Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="logout.html">Logout</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
         </ul>
-        <hr>
     </nav>
 
+    <!-- Main Content -->
     <main>
-        <center>
-            <h1>
-                Items in stock: <br>
-            </h1>
-            <h2>
-                Men Clothing: <br>
-            </h2>
-        </center>
-        <categories1 class="cat">
-            <jacket class="items">
-                <img src="images\jacket.jpg" alt="Check URL" width="300px" height="300px">
-                <h3>
-                    <u>
-                        <b>
-                            <center>
-                                Jacket<br>
-                            </center>
-                        </b>
-                    </u>
-                </h3>
-                <center>
-                    Price = 250$<br> Denim Jacket from <i>Levis</i> available with very fine quality.
-                </center>
-            </jacket>
-            <hoodie class="items">
-                <img src="images\hoodie.jpg" alt="Check URL" width="300px" height="300px">
-                <h3>
-                    <u>
-                        <b>
-                            <center>
-                                Hoodie<br>
-                            </center>
-                        </b>
-                    </u>
-                </h3>
-                <center>
-                    Price = 100$<br> Hoodie from <i>Tommy Hilfiger</i> available with very fine quality.
-                </center>
-            </hoodie>
-            <shirt class="items">
-                <img src="images\shirt.jpg" alt="Check URL" width="300px" height="300px">
-                <h3>
-                    <u>
-                        <b>
-                            <center>
-                                Shirt<br>
-                            </center>
-                        </b>
-                    </u>
-                </h3>
-                <center>
-                    Price = 150$<br> Shirt from <i>Cougar</i> available with very fine quality.
-                </center>
-            </shirt>
-            <jeans class="items">
-                <img src="images\jeans.jpg" alt="Check URL" width="300px" height="300px">
-                <h3>
-                    <u>
-                        <b>
-                            <center>
-                                Jeans<br>
-                            </center>
-                        </b>
-                    </u>
-                </h3>
-                <center>
-                    Price = 130$<br> Jeans from <i>Levis</i> available with very fine quality.
-                </center>
-            </jeans>
-        </categories1>
-        <br>
+        <!-- Items in stock Section -->
+        <section class="items-section">
+            <h2>Items in Stock:</h2>
 
-        <center>
-            <h2>
-                Men Accessories: <br>
-            </h2>
-        </center>
-        <categories2 class="cat">
-            <watch class="items">
-                <img src="images\watch.jpg" alt="Check URL" width="300px" height="300px">
-                <h3>
-                    <u>
-                        <b>
-                            <center>
-                                Wrist Watch<br>
-                            </center>
-                        </b>
-                    </u>
-                </h3>
-                <center>
-                    Price = 500$<br> Wrist Watch from <i>Tissot</i> available with very fine quality.
-                </center>
-            </watch>
-            <bracelet class="items">
-                <img src="images\bracelet.jpg" alt="Check URL" width="300px" height="300px">
-                <h3>
-                    <u>
-                        <b>
-                            <center>
-                                Bracelet<br>
-                            </center>
-                        </b>
-                    </u>
-                </h3>
-                <center>
-                    Price = 60$<br> Bracelets from <i>Seek Discomfort</i> available with very fine quality.
-                </center>
-            </bracelet>
-        </categories2>
+            <!-- Men Clothing Section -->
+            <section class="category">
+                <h3>Men Clothing:</h3>
+                <div class="items-grid">
+                    <!-- Jacket Item -->
+                    <article class="item-card">
+                        <img src="images/jacket.jpg" alt="Denim Jacket" class="item-image">
+                        <h4>Denim Jacket</h4>
+                        <p>Price: $250</p>
+                        <p>Denim Jacket from <i>Levis</i> available with very fine quality.</p>
+                    </article>
+                    <!-- Hoodie Item -->
+                    <article class="item-card">
+                        <img src="images/hoodie.jpg" alt="Hoodie" class="item-image">
+                        <h4>Hoodie</h4>
+                        <p>Price: $100</p>
+                        <p>Hoodie from <i>Tommy Hilfiger</i> available with very fine quality.</p>
+                    </article>
+                    <!-- Shirt Item -->
+                    <article class="item-card">
+                        <img src="images/shirt.jpg" alt="Shirt" class="item-image">
+                        <h4>Shirt</h4>
+                        <p>Price: $150</p>
+                        <p>Shirt from <i>Cougar</i> available with very fine quality.</p>
+                    </article>
+                    <!-- Jeans Item -->
+                    <article class="item-card">
+                        <img src="images/jeans.jpg" alt="Jeans" class="item-image">
+                        <h4>Jeans</h4>
+                        <p>Price: $130</p>
+                        <p>Jeans from <i>Levis</i> available with very fine quality.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Men Accessories Section -->
+            <section class="category">
+                <h3>Men Accessories:</h3>
+                <div class="items-grid">
+                    <!-- Watch Item -->
+                    <article class="item-card">
+                        <img src="images/watch.jpg" alt="Wrist Watch" class="item-image">
+                        <h4>Wrist Watch</h4>
+                        <p>Price: $500</p>
+                        <p>Wrist Watch from <i>Tissot</i> available with very fine quality.</p>
+                    </article>
+                    <!-- Bracelet Item -->
+                    <article class="item-card">
+                        <img src="images/bracelet.jpg" alt="Bracelet" class="item-image">
+                        <h4>Bracelet</h4>
+                        <p>Price: $60</p>
+                        <p>Bracelets from <i>Seek Discomfort</i> available with very fine quality.</p>
+                    </article>
+                </div>
+            </section>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mens Fashion Store. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
